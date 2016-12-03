@@ -199,7 +199,7 @@ void DetectorConstruction::SetMaterial()
 	fDRZ_high_mt->AddProperty("RINDEX",        DRZ_Energy, DRZ_RIND,  drznum);
 	fDRZ_high_mt->AddProperty("ABSLENGTH",     DRZ_Energy, DRZ_ABSL,  drznum);
 	//fLXe_mt->AddConstProperty("SCINTILLATIONYIELD",12000./MeV);
-	fDRZ_high_mt->AddConstProperty("SCINTILLATIONYIELD",1./MeV);
+	fDRZ_high_mt->AddConstProperty("SCINTILLATIONYIELD",12000./MeV);
 	fDRZ_high_mt->AddConstProperty("RESOLUTIONSCALE",1.0);
 	fDRZ_high_mt->AddConstProperty("FASTTIMECONSTANT",0.5*ms);
 	fDRZ_high_mt->AddConstProperty("SLOWTIMECONSTANT",3.*ms);
@@ -270,6 +270,6 @@ void DetectorConstruction::SetDimension(){
 
 	WaterBoxX = 30.0*cm;
 	WaterBoxY = 30.0*cm;
-	WaterBoxZ = 20.0*cm;
+	WaterBoxZ = 1.0*cm;
 
 }
