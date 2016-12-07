@@ -81,6 +81,7 @@ PhysicsList::PhysicsList()
 
 	opticalPhysics->SetTrackSecondariesFirst(kCerenkov,true);
 	opticalPhysics->SetTrackSecondariesFirst(kScintillation,true);
+
 }
 
 PhysicsList::~PhysicsList()
@@ -92,4 +93,5 @@ void PhysicsList::SetCuts()
 {
 	//G4VUserPhysicsList::SetCuts();
 	SetCutValue(defaultCutValue,"e-");
+	SetCutsWithDefault();
 }

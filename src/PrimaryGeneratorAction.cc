@@ -54,8 +54,8 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 	nGeneratedPrimaries = 0;
 	G4AutoLock	lock(&PrimGenMutex);
 	//calculatedPhaseSpaceFileIN = "MomentomPhsp.txt";
-	//calculatedPhaseSpaceFileIN = "PhSp_Iplan_1_2_1.txt";
-	calculatedPhaseSpaceFileIN = "PhSp_Iplan_1_2_1_v2.txt";
+	calculatedPhaseSpaceFileIN = "PhSp_Iplan_1_2_1.txt";
+	//calculatedPhaseSpaceFileIN = "PhSp_Iplan_1_2_1_v2.txt";
 	if(!fileReader) fileReader = new FileReader(calculatedPhaseSpaceFileIN);
 	//if(!FileReader) fileReader = new FileReader();
 	particleGun = new G4ParticleGun();

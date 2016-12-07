@@ -22,11 +22,8 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-//
 // 	Author: wjcheon (Medical physics Lab, Sungkyunkwan University, Seoul, Republic of Korea)
-//	Supports : Gumplinger Peter (gum@triumf.ca)
-//      GitHub: http://github.com/wjcheon
-//
+//  GitHub: http://github.com/wjcheon
 //
 
 #include "DetectorConstruction.hh"
